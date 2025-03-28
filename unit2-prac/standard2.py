@@ -57,7 +57,6 @@ def identify_conflicts(venue1_schedule, venue2_schedule):
             result[artist] = time
     return result
 
-
 """
 Given a dictionary votes that maps attendees id numbers to the artist they voted for, 
 return the artist that had the most number of votes. If there is a tie, return any artist with the top number of votes.
@@ -95,11 +94,10 @@ def max_audience_performances(audiences):
     max_audience = max(aud_map.keys())
     for aud_size, freq in aud_map.items():
         if aud_size == max_audience:
-            return aud_size*freq
+            return aud_size*freq  #maybe use addition instead of mult for faster 
 
 
         
-
 
 def main():
     my_list = ["trouncy", "flouncy", "flouncy", "bouncy", "doc", "flouncy"]

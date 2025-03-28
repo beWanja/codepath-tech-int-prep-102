@@ -25,7 +25,6 @@ def non_decreasing(nums):
             return False
     return True
 
-
 def main():
 
     print("----TARGET----")
